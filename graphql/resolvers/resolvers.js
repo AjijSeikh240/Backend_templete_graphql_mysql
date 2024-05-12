@@ -2,7 +2,6 @@ import databaseModel from "../../models/index.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 const { User, Post } = databaseModel;
-
 const resolvers = {
   User: {
     async posts(user) {
